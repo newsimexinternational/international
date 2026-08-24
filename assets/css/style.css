@@ -1,24 +1,24 @@
-\:root {
+:root {
 
-  \--bg: #060714;
+  bg: #060714;
 
-  \--surface: rgba(12, 18, 35, 0.95);
+  surface: rgba(12, 18, 35, 0.95);
 
-  \--surface-strong: rgba(20, 29, 52, 0.98);
+  surface-strong: rgba(20, 29, 52, 0.98);
 
-  \--text: #edf2ff;
+  text: #edf2ff;
 
-  \--muted: #a8b4d1;
+  muted: #a8b4d1;
 
-  \--primary: #f5b303;
+  primary: #f5b303;
 
-  \--secondary: #69b3ff;
+  secondary: #69b3ff;
 
-  \--accent: #7deaf6;
+  accent: #7deaf6;
 
-  \--shadow: 0 24px 80px rgba(0, 0, 0, 0.25);
+  shadow: 0 24px 80px rgba(0, 0, 0, 0.25);
 
-  \--radius: 24px;
+  radius: 24px;
 
 *font-family*: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
