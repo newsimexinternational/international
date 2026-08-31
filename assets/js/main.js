@@ -31,9 +31,20 @@ if (acceptCookies) {
   });
 }
 
-if (menuToggle) {
+if (menuToggle && mainNav) {
   menuToggle.addEventListener('click', () => {
-    mainNav?.classList.toggle('open');
+    const isOpen = mainNav.classList.toggle('open');
+
+    menuToggle.classList.toggle('active', isOpen);
+    menuToggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  mainNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('open');
+      menuToggle.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
   });
 }
 
